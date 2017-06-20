@@ -35,7 +35,7 @@ project = dict(
     name='ezpy',
     url='https://github.com/jhermann/ezpy',
     license="Apache 2.0",
-    keywords='install deploy pip packaging virtualenv hosted.by.github'.split(),
+    keywords='install deploy pip packaging virtualenv hosted.by.github',
     py_modules=['ezpy'],
 
     install_requires=[],
