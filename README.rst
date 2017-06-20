@@ -15,7 +15,12 @@ Make Python application installs easy as pie, for both users and developers.
 Introduction
 ------------
 
-**TODO**
+What Does it Do?
+^^^^^^^^^^^^^^^^
+
+The main goal of the project is to make installs very easy and convenient,
+without abandoning security and other technical requirements.
+Think ``pipsi`` with a wider scope, and working on Python 3.
 
 
 Design Goals
@@ -23,14 +28,46 @@ Design Goals
 
 * Reduce installation instructions to ideally one or two command calls
 * Make distribution of ‘simple’ scripts a breeze
-* … but support dependencies from PyPI nontheless
+  * … but support dependencies from PyPI nontheless
 * Require only a Python interpreter to be already installed on an end-user machine
+  * … but use what's installed already (if new enough)
+  * Work on outdated installations (say down to Wheezy / Precise / pip 1.5.6)
+* Work on Linux, MacOS, Windows (in that order of importance)
+* Rely heavily on existing tooling, especially ``pyvenv`` and ``pip``
+* Vendor any dependencies, or don't have any beyond the standard library.
 
 
 Usage
 -----
 
-**TODO**
+End-Users
+^^^^^^^^^
+
+Story ♯1: Users can download a simple script and start it (or, well, ``curl|python`` it),
+and it'll bootstrap a full environment of dependencies.
+
+Story ♯2: Users need to ``pip3 install --user ezpy`` –
+handle the ``~/.local/bin`` problem somehow.
+Given no dependencies, ``sudo pip3 install ezpy`` would also be ok.
+
+Then they are able to install any
+PyPI application or tool via a simple call to ``ezpy get|run ‹requirement|script-url›``.
+Mostly like ``pipsi`` operates.
+Console entry points are linked / copied into the existing path, leaving out any unrelated
+virtualenv binaries (including Python itself).
+
+
+Developers
+^^^^^^^^^^
+
+Relating to ♯1, give developers the ability to embed code
+that intercepts command calls (``myscript ezpy …``).
+They call ``ezpy embed ‹myscript.py›``, and a stub is added that does this.
+
+For #2, nothing special has to be done. Just release normally to PyPI,
+or make a script available via a HTTP[S] URL.
+
+♯3: Something involving ``ezpy docker …``.
 
 
 Installation
