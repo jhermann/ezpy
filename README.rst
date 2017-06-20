@@ -28,10 +28,14 @@ Design Goals
 
 * Reduce installation instructions to ideally one or two command calls
 * Make distribution of ‘simple’ scripts a breeze
+
   * … but support dependencies from PyPI nontheless
+
 * Require only a Python interpreter to be already installed on an end-user machine
+
   * … but use what's installed already (if new enough)
   * Work on outdated installations (say down to Wheezy / Precise / pip 1.5.6)
+
 * Work on Linux, MacOS, Windows (in that order of importance)
 * Rely heavily on existing tooling, especially ``pyvenv`` and ``pip``
 * Vendor any dependencies, or don't have any beyond the standard library.
