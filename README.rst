@@ -57,7 +57,7 @@ Calling ``python3 -m ezpy check`` after that will go around any OS shenanigans
 Given no dependencies, ``sudo pip3 install ezpy`` would also be ok.
 And this is another option for bootstrapping:
 
-.. code:
+.. code-block::
 
     pip install -t /tmp/$USER-$$ ezpy
     python /tmp/$USER-$$/ezpy.py bootstrap
