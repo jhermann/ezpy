@@ -18,6 +18,15 @@ Introduction
 **TODO**
 
 
+Design Goals
+^^^^^^^^^^^^
+
+* Reduce installation instructions to ideally one or two command calls
+* Make distribution of ‘simple’ scripts a breeze
+* … but support dependencies from PyPI nontheless
+* Require only a Python interpreter to be already installed on an end-user machine
+
+
 Usage
 -----
 
