@@ -99,3 +99,26 @@ ENV/
 
 # mypy
 .mypy_cache/
+
+
+#######################################
+# Custom (additions to GitHub template)
+
+# Misc. Python
+pip-selfcheck.json
+docs/README.rst
+docs/*.log
+src/*.egg-info/
+
+# virtualenvs
+bin/
+include/
+lib/
+local/
+share/
+pyvenv.cfg
+.venv/
+.pyvenv/
+
+# Jekyll
+_site/
