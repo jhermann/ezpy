@@ -1,0 +1,27 @@
+#
+# Travis Project Descriptor
+#
+# See http://docs.travis-ci.com/user/build-configuration/
+#
+
+# build matrix
+language: python
+python:
+    - "3.4"
+#    - "pypy"
+
+# environment
+#env:
+#    global:
+#        - FOO=bar
+
+# command to install dependencies
+install:
+    - "pip install -r dev-requirements.txt"
+
+# command to run tests
+script: tox
+
+# report to coveralls.io
+after_success:
+    - coveralls --rcfile coverage.cfg
