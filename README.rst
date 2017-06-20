@@ -50,15 +50,30 @@ End-Users
 Story ♯1: Users can download a simple script and start it (or, well, ``curl|python`` it),
 and it'll bootstrap a full environment of dependencies.
 
-Story ♯2: Users need to ``pip3 install --user ezpy`` –
-handle the ``~/.local/bin`` problem somehow.
-Given no dependencies, ``sudo pip3 install ezpy`` would also be ok.
+Story ♯2: Users need to ``pip3 install --user ezpy``.
+Calling ``python3 -m ezpy check`` after that will go around any OS shenanigans
+– that could be used to handle the ``~/.local/bin`` problem (``python3 -m ezpy fix-path``).
 
-Then they are able to install any
+Given no dependencies, ``sudo pip3 install ezpy`` would also be ok.
+And this is another option for bootstrapping:
+
+.. code:
+
+    pip install -t /tmp/$USER-$$ ezpy
+    python /tmp/$USER-$$/ezpy.py bootstrap
+
+Then users are able to install any
 PyPI application or tool via a simple call to ``ezpy get|run ‹requirement|script-url›``.
 Mostly like ``pipsi`` operates.
 Console entry points are linked / copied into the existing path, leaving out any unrelated
 virtualenv binaries (including Python itself).
+
+Story ♯3: ``ezpy run ‹url›#‹algo›=‹checksum›`` to directly run scripts from the web
+– security is based on the trust you have into the 3rd party
+that gave you the link with the checksum.
+No difference to PyPI installs secured by a checksum – those run downloaded code, too.
+
+Story ♯4: ``ezpy docker run …``
 
 
 Developers
@@ -71,7 +86,7 @@ They call ``ezpy embed ‹myscript.py›``, and a stub is added that does this.
 For #2, nothing special has to be done. Just release normally to PyPI,
 or make a script available via a HTTP[S] URL.
 
-♯3: Something involving ``ezpy docker …``.
+♯4: Something like ``ezpy docker build …`` or ``ezpy docker-file …``.
 
 
 Installation
