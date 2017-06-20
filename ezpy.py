@@ -1,3 +1,4 @@
+#! /usr/bin/env python3
 # -*- coding: utf-8 -*-
 """
     ezpy – Make Python application installs easy as pie, for both users and developers.
