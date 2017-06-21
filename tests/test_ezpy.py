@@ -15,7 +15,8 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 from ezpy import *
+from ezpy import __version__ as version
 
 
-def test_dummy():
-    pass
+def test_version_is_numeric_semver():
+    assert all(x.isdigit() for x in version.split('.')[:3])
