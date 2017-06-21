@@ -117,6 +117,20 @@ References
 
 * `pip issue #3813 <https://github.com/pypa/pip/issues/3813>`_
 
+Related Projects
+^^^^^^^^^^^^^^^^
+Last recorded commit activity is included as ``(YYYY)`` – at the time entries were added (2017).
+
+* `pantsbuild/pex <https://github.com/pantsbuild/pex>`_ (2017) – A library and tool for generating .pex (Python EXecutable) files.
+* `getsentry/freight <https://github.com/getsentry/freight>`_ (2017) – A service which aims to make application deployments better.
+* `armadaplatform/armada <https://github.com/armadaplatform/armada>`_ (2017) – Complete solution for development, deployment, configuration and discovery of microservices.
+* `mitsuhiko/platter <https://github.com/mitsuhiko/platter>`_ (2015) – A useful helper for wheel deployments.
+* `sdispater/poet <https://github.com/sdispater/poet>`_ (2017, experimental) – Declare, manage and install dependencies of Python projects – inspired by ``cargo``.
+
+* `jonparrott/noel <https://github.com/jonparrott/noel>`_ (2016) – Easily deploy applications to Kubernetes.
+* `0xadada/dockdj <https://github.com/0xadada/dockdj>`_ (2015, unmaintained) – Building 12-factor Python / Django web apps Docker images and deploying them to AWS.
+* `mattmakai/underwear <https://github.com/mattmakai/underwear>`_ (2015) – Dead simple LAMP-stack deployments for Python-powered web applications.
+
 
 
 .. |Travis CI| image:: https://api.travis-ci.org/jhermann/ezpy.svg
