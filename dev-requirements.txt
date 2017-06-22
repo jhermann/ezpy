@@ -15,6 +15,7 @@ pytest-mock==1.6.0
 pytest-spec==1.1.0
 tox==2.7.0
 
+bumpr==0.3.6
 pip-upgrader==1.4.1
 bpython==0.16
 yolk3k==0.9
