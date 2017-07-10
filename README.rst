@@ -127,6 +127,7 @@ Last recorded commit activity is included as ``(YYYY)`` – at the time entries 
 * `mitsuhiko/platter <https://github.com/mitsuhiko/platter>`_ (2015) – A useful helper for wheel deployments.
 * `sdispater/poet <https://github.com/sdispater/poet>`_ (2017, experimental) – Declare, manage and install dependencies of Python projects – inspired by ``cargo``.
 
+* `flatpak <https://github.com/flatpak/flatpak>`_ (2017) – Linux application sandboxing and distribution framework.
 * `jonparrott/noel <https://github.com/jonparrott/noel>`_ (2016) – Easily deploy applications to Kubernetes.
 * `0xadada/dockdj <https://github.com/0xadada/dockdj>`_ (2015, unmaintained) – Building 12-factor Python / Django web apps Docker images and deploying them to AWS.
 * `mattmakai/underwear <https://github.com/mattmakai/underwear>`_ (2015) – Dead simple LAMP-stack deployments for Python-powered web applications.
