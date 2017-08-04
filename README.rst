@@ -126,6 +126,7 @@ Last recorded commit activity is included as ``(YYYY)`` – at the time entries 
 * `armadaplatform/armada <https://github.com/armadaplatform/armada>`_ (2017) – Complete solution for development, deployment, configuration and discovery of microservices.
 * `mitsuhiko/platter <https://github.com/mitsuhiko/platter>`_ (2015) – A useful helper for wheel deployments.
 * `sdispater/poet <https://github.com/sdispater/poet>`_ (2017, experimental) – Declare, manage and install dependencies of Python projects – inspired by ``cargo``.
+* `jamesabel/osnap <https://github.com/jamesabel/osnap>`_ (2017) – Deliver self-contained Python applications to end users for Windows and OSX/MacOS.
 
 * `flatpak <https://github.com/flatpak/flatpak>`_ (2017) – Linux application sandboxing and distribution framework.
 * `jonparrott/noel <https://github.com/jonparrott/noel>`_ (2016) – Easily deploy applications to Kubernetes.
