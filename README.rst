@@ -124,6 +124,7 @@ Last recorded commit activity is included as ``(YYYY)`` – at the time entries 
 * `pantsbuild/pex <https://github.com/pantsbuild/pex>`_ (2017) – A library and tool for generating .pex (Python EXecutable) files.
 * `getsentry/freight <https://github.com/getsentry/freight>`_ (2017) – A service which aims to make application deployments better.
 * `armadaplatform/armada <https://github.com/armadaplatform/armada>`_ (2017) – Complete solution for development, deployment, configuration and discovery of microservices.
+* `cloudify-cosmo/wagon <https://github.com/cloudify-cosmo/wagon>`_ (2017) – Creates wheel-based archives to allow portable offline installation of Python packages and their dependencies.
 * `mitsuhiko/platter <https://github.com/mitsuhiko/platter>`_ (2015) – A useful helper for wheel deployments.
 * `sdispater/poet <https://github.com/sdispater/poet>`_ (2017, experimental) – Declare, manage and install dependencies of Python projects – inspired by ``cargo``.
 * `jamesabel/osnap <https://github.com/jamesabel/osnap>`_ (2017) – Deliver self-contained Python applications to end users for Windows and OSX/MacOS.
