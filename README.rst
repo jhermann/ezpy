@@ -116,6 +116,7 @@ References
 ----------
 
 * `pip issue #3813 <https://github.com/pypa/pip/issues/3813>`_
+* `Share scripts that have dependencies with Nix <https://compiletoi.net/share-scripts-that-have-dependencies-with-nix/>`_
 
 Related Projects
 ^^^^^^^^^^^^^^^^
