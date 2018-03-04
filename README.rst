@@ -147,11 +147,11 @@ Last recorded commit activity is included as ``(YYYY)`` – at the time entries 
     :target: https://github.com/jhermann/ezpy/issues
 .. |License| image:: https://img.shields.io/pypi/l/ezpy.svg
     :target: https://github.com/jhermann/ezpy/blob/master/LICENSE
-.. |Development Status| image:: https://pypip.in/status/ezpy/badge.svg
+.. |Development Status| image:: https://img.shields.io/pypi/status/ezpy.svg
     :target: https://pypi.python.org/pypi/ezpy/
 .. |Latest Version| image:: https://img.shields.io/pypi/v/ezpy.svg
     :target: https://pypi.python.org/pypi/ezpy/
-.. |Download format| image:: https://pypip.in/format/ezpy/badge.svg
+.. |Download format| image:: https://img.shields.io/pypi/format/ezpy.svg
     :target: https://pypi.python.org/pypi/ezpy/
 .. |Downloads| image:: https://img.shields.io/pypi/dw/ezpy.svg
     :target: https://pypi.python.org/pypi/ezpy/
