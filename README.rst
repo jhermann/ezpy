@@ -3,7 +3,7 @@ ezpy
 ====
 
  |Travis CI|  |Coveralls|  |GitHub Issues|  |License|
- |Latest Version|  |Downloads|
+ |Latest Version|
 
 Make Python application installs easy as pie, for both users and developers.
 
@@ -152,6 +152,4 @@ Last recorded commit activity is included as ``(YYYY)`` – at the time entries 
 .. |Latest Version| image:: https://img.shields.io/pypi/v/ezpy.svg
     :target: https://pypi.python.org/pypi/ezpy/
 .. |Download format| image:: https://img.shields.io/pypi/format/ezpy.svg
-    :target: https://pypi.python.org/pypi/ezpy/
-.. |Downloads| image:: https://img.shields.io/pypi/dw/ezpy.svg
     :target: https://pypi.python.org/pypi/ezpy/
