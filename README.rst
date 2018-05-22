@@ -132,6 +132,7 @@ Last recorded commit activity is included as ``(YYYY)`` – at the time entries 
 * `glyph/venvdotapp <https://github.com/glyph/venvdotapp>`_ - Virtualenv to NSBundle (MacOS) packager.
 * `mherrmann/fbs <https://github.com/mherrmann/fbs>`_ (2018) – Create cross-platform desktop apps in minutes, not months.
 * `linkedin/shiv <https://github.com/linkedin/shiv>`_ (2018) – A command line utility for building fully self-contained Python zipapps as outlined in PEP 441, but with all their dependencies included.
+* `PyAr/fades <https://github.com/PyAr/fades>`_ (2018) – fades is a system that automatically handles the virtualenvs in the cases normally found when writing scripts and simple programs, and even helps to administer big projects.
 
 * `flatpak <https://github.com/flatpak/flatpak>`_ (2017) – Linux application sandboxing and distribution framework.
 * `jonparrott/noel <https://github.com/jonparrott/noel>`_ (2016) – Easily deploy applications to Kubernetes.
