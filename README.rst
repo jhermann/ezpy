@@ -79,6 +79,13 @@ Story ♯4: ``ezpy docker run …``
 Developers
 ^^^^^^^^^^
 
+ezpy should also be usable to ease the developer workflow.
+Cloning projects by their PyPI name from the usual sources (GitHub, GitLab, …),
+as well as cloning a fork of those project made in your account
+(with both upstream and origin set accordingly).
+
+Then there is support for the end user stories…
+
 Relating to ♯1, give developers the ability to embed code
 that intercepts command calls (``myscript ezpy …``).
 They call ``ezpy embed ‹myscript.py›``, and a stub is added that does this.
