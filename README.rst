@@ -138,14 +138,15 @@ Last recorded commit activity is included as ``(YYYY)`` – at the time entries 
 * `jamesabel/osnap <https://github.com/jamesabel/osnap>`_ (2017) – Deliver self-contained Python applications to end users for Windows and OSX/MacOS.
 * `glyph/venvdotapp <https://github.com/glyph/venvdotapp>`_ - Virtualenv to NSBundle (MacOS) packager.
 * `mherrmann/fbs <https://github.com/mherrmann/fbs>`_ (2018) – Create cross-platform desktop apps in minutes, not months.
-* `linkedin/shiv <https://github.com/linkedin/shiv>`_ (2018) – A command line utility for building fully self-contained Python zipapps as outlined in PEP 441, but with all their dependencies included.
+* `linkedin/shiv <https://github.com/linkedin/shiv#shiv>`_ (2020) – A command line utility for building fully self-contained Python zipapps as outlined in PEP 441, but with all their dependencies included. [Python 3.6+]
 * `PyAr/fades <https://github.com/PyAr/fades>`_ (2018) – fades is a system that automatically handles the virtualenvs in the cases normally found when writing scripts and simple programs, and even helps to administer big projects.
 
 * `flatpak <https://github.com/flatpak/flatpak>`_ (2017) – Linux application sandboxing and distribution framework.
 * `jonparrott/noel <https://github.com/jonparrott/noel>`_ (2016) – Easily deploy applications to Kubernetes.
 * `0xadada/dockdj <https://github.com/0xadada/dockdj>`_ (2015, unmaintained) – Building 12-factor Python / Django web apps Docker images and deploying them to AWS.
 * `mattmakai/underwear <https://github.com/mattmakai/underwear>`_ (2015) – Dead simple LAMP-stack deployments for Python-powered web applications.
-
+* `takluyver/pynsist <https://github.com/takluyver/pynsist>`_ (2019) – Build Windows installers for Python applications (also cross-platform).
+* `conda/constructor <https://github.com/conda/constructor>`_ (2020) – A tool for creating installers from conda packages.
 
 
 .. |Travis CI| image:: https://api.travis-ci.org/jhermann/ezpy.svg
