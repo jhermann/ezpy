@@ -127,7 +127,8 @@ References
 
 Related Projects
 ^^^^^^^^^^^^^^^^
-Last recorded commit activity is included as ``(YYYY)`` – at the time entries were added (2017).
+Last recorded commit activity is included as ``(YYYY)`` – at the time entries were initially added or updated.
+So these dates are an upper bound regarding age, and are not consistent across all entries.
 
 * `pantsbuild/pex <https://github.com/pantsbuild/pex>`_ (2017) – A library and tool for generating .pex (Python EXecutable) files.
 * `getsentry/freight <https://github.com/getsentry/freight>`_ (2017) – A service which aims to make application deployments better.
@@ -147,6 +148,7 @@ Last recorded commit activity is included as ``(YYYY)`` – at the time entries 
 * `mattmakai/underwear <https://github.com/mattmakai/underwear>`_ (2015) – Dead simple LAMP-stack deployments for Python-powered web applications.
 * `takluyver/pynsist <https://github.com/takluyver/pynsist>`_ (2019) – Build Windows installers for Python applications (also cross-platform).
 * `conda/constructor <https://github.com/conda/constructor>`_ (2020) – A tool for creating installers from conda packages.
+* `itsjohncs/superzippy <https://github.com/itsjohncs/superzippy>`_ (2018) – A simple tool for turning a multi-file, multi-dependency Python script into a single file.
 
 
 .. |Travis CI| image:: https://api.travis-ci.org/jhermann/ezpy.svg
