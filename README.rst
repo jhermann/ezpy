@@ -141,7 +141,7 @@ So these dates are an upper bound regarding age, and are not consistent across a
 * `linkedin/shiv <https://github.com/linkedin/shiv#shiv>`_ (2020) – A command line utility for building fully self-contained Python zipapps as outlined in PEP 441, but with all their dependencies included. [Python 3.6+]
 * `mitsuhiko/platter <https://github.com/mitsuhiko/platter>`_ (2018) – A useful helper for wheel deployments.
 * `takluyver/pynsist <https://github.com/takluyver/pynsist>`_ (2019) – Build Windows installers for Python applications (also cross-platform).
-* `dephell/dephell <https://github.com/dephell/dephell>` (2020) – Python project management. Manage packages: convert between formats, lock, install, resolve, isolate, test, build graph, show outdated, audit. Manage venvs, build package, bump version.
+* `dephell/dephell <https://github.com/dephell/dephell>`_ (2020) – Python project management. Manage packages: convert between formats, lock, install, resolve, isolate, test, build graph, show outdated, audit. Manage venvs, build package, bump version.
 
 * `getsentry/freight <https://github.com/getsentry/freight>`_ (2020) – A service which aims to make application deployments better.
 * `armadaplatform/armada <https://github.com/armadaplatform/armada>`_ (2017) – Complete solution for development, deployment, configuration and discovery of microservices.
