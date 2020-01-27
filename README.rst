@@ -127,26 +127,33 @@ References
 
 Related Projects
 ^^^^^^^^^^^^^^^^
+
+Let's start with an overview of tools I used at some point (or which I'm still using) and which proved useful and usable:
+
+* ``PEX`` creates single file ZIP apps (PEP 441). ``shiv`` is very similar.
+* ``platter`` collects wheels into a tarball for off-line and repeatable deployments. It's sort-of unmaintained. ``wagon`` is similar, but I did not test it yet.
+
+What follows is a longer list, in part abandoned / unmaintained, and with different traits regarding platform compatibility and versatility.
 Last recorded commit activity is included as ``(YYYY)`` – at the time entries were initially added or updated.
 So these dates are an upper bound regarding age, and are not consistent across all entries.
 
-* `pantsbuild/pex <https://github.com/pantsbuild/pex>`_ (2017) – A library and tool for generating .pex (Python EXecutable) files.
-* `getsentry/freight <https://github.com/getsentry/freight>`_ (2017) – A service which aims to make application deployments better.
+* `pantsbuild/pex <https://github.com/pantsbuild/pex>`_ (2020) – A library and tool for generating .pex (Python EXecutable) files.
+* `linkedin/shiv <https://github.com/linkedin/shiv#shiv>`_ (2020) – A command line utility for building fully self-contained Python zipapps as outlined in PEP 441, but with all their dependencies included. [Python 3.6+]
+* `mitsuhiko/platter <https://github.com/mitsuhiko/platter>`_ (2018) – A useful helper for wheel deployments.
+* `takluyver/pynsist <https://github.com/takluyver/pynsist>`_ (2019) – Build Windows installers for Python applications (also cross-platform).
+
+* `getsentry/freight <https://github.com/getsentry/freight>`_ (2020) – A service which aims to make application deployments better.
 * `armadaplatform/armada <https://github.com/armadaplatform/armada>`_ (2017) – Complete solution for development, deployment, configuration and discovery of microservices.
-* `cloudify-cosmo/wagon <https://github.com/cloudify-cosmo/wagon>`_ (2017) – Creates wheel-based archives to allow portable offline installation of Python packages and their dependencies.
-* `mitsuhiko/platter <https://github.com/mitsuhiko/platter>`_ (2015) – A useful helper for wheel deployments.
+* `cloudify-cosmo/wagon <https://github.com/cloudify-cosmo/wagon>`_ (2018) – Creates wheel-based archives to allow portable offline installation of Python packages and their dependencies.
 * `sdispater/poet <https://github.com/sdispater/poet>`_ (2017, experimental) – Declare, manage and install dependencies of Python projects – inspired by ``cargo``.
-* `jamesabel/osnap <https://github.com/jamesabel/osnap>`_ (2017) – Deliver self-contained Python applications to end users for Windows and OSX/MacOS.
+* `jamesabel/osnap <https://github.com/jamesabel/osnap>`_ (2019) – Deliver self-contained Python applications to end users for Windows and OSX/MacOS.
 * `glyph/venvdotapp <https://github.com/glyph/venvdotapp>`_ - Virtualenv to NSBundle (MacOS) packager.
 * `mherrmann/fbs <https://github.com/mherrmann/fbs>`_ (2018) – Create cross-platform desktop apps in minutes, not months.
-* `linkedin/shiv <https://github.com/linkedin/shiv#shiv>`_ (2020) – A command line utility for building fully self-contained Python zipapps as outlined in PEP 441, but with all their dependencies included. [Python 3.6+]
 * `PyAr/fades <https://github.com/PyAr/fades>`_ (2018) – fades is a system that automatically handles the virtualenvs in the cases normally found when writing scripts and simple programs, and even helps to administer big projects.
-
 * `flatpak <https://github.com/flatpak/flatpak>`_ (2017) – Linux application sandboxing and distribution framework.
 * `jonparrott/noel <https://github.com/jonparrott/noel>`_ (2016) – Easily deploy applications to Kubernetes.
 * `0xadada/dockdj <https://github.com/0xadada/dockdj>`_ (2015, unmaintained) – Building 12-factor Python / Django web apps Docker images and deploying them to AWS.
 * `mattmakai/underwear <https://github.com/mattmakai/underwear>`_ (2015) – Dead simple LAMP-stack deployments for Python-powered web applications.
-* `takluyver/pynsist <https://github.com/takluyver/pynsist>`_ (2019) – Build Windows installers for Python applications (also cross-platform).
 * `conda/constructor <https://github.com/conda/constructor>`_ (2020) – A tool for creating installers from conda packages.
 * `itsjohncs/superzippy <https://github.com/itsjohncs/superzippy>`_ (2018) – A simple tool for turning a multi-file, multi-dependency Python script into a single file.
 
