@@ -119,6 +119,30 @@ You might also need to follow some
 to make the necessary basic commands available on *Linux*, *Mac OS X*, and *Windows*.
 
 
+‘dephell’ Notes
+---------------
+
+‘dephell’ is a useful add-on tool for project and venv management
+that works with existing standard tooling,
+instead of doing a bad replacement job like so many others.
+
+It is installed via a Python installer script into its own venv
+(compatible to what dephell itself creates as a so-called ‘jail’).
+
+.. code-block::
+
+    curl -L dephell.org/install | python3  # or 'python3.6'
+
+To get a fully functional ‘git clone’d working directory as of January 2020,
+this is needed after a ‘normal’ venv setup::
+
+    pip install "pip<19"  # fixed in dephell 0.8.1 for pip 20
+    pip install -e .[full]  # install all optional deps
+    pip install "mistune<1"  # fix "m2r"
+
+Note that Python 3.6 is needed at minimum.
+
+
 References
 ----------
 
