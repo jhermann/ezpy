@@ -167,6 +167,7 @@ So these dates are an upper bound regarding age, and are not consistent across a
 * `takluyver/pynsist <https://github.com/takluyver/pynsist>`_ (2019) – Build Windows installers for Python applications (also cross-platform).
 * `dephell/dephell <https://github.com/dephell/dephell>`_ (2020) – Python project management. Manage packages: convert between formats, lock, install, resolve, isolate, test, build graph, show outdated, audit. Manage venvs, build package, bump version.
 
+* `facebookincubator/xar <https://github.com/facebookincubator/xar>`_ (2019) – XAR lets you package many files into a single self-contained executable file. This makes it easy to distribute and install.
 * `getsentry/freight <https://github.com/getsentry/freight>`_ (2020) – A service which aims to make application deployments better.
 * `armadaplatform/armada <https://github.com/armadaplatform/armada>`_ (2017) – Complete solution for development, deployment, configuration and discovery of microservices.
 * `cloudify-cosmo/wagon <https://github.com/cloudify-cosmo/wagon>`_ (2018) – Creates wheel-based archives to allow portable offline installation of Python packages and their dependencies.
