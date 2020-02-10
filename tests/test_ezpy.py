@@ -1,4 +1,5 @@
-# pylint: disable=wildcard-import, missing-docstring, no-self-use, bad-continuation
+# pylint: disable=wildcard-import, unused-wildcard-import, missing-docstring
+# pylint: disable=no-self-use, bad-continuation
 """ Test «ezpy».
 """
 # Copyright ©  2017 Jürgen Hermann <jh@web.de>

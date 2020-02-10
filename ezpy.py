@@ -20,7 +20,6 @@
 from __future__ import absolute_import, unicode_literals, print_function
 
 import sys
-import time
 import errno
 import codecs
 import logging
