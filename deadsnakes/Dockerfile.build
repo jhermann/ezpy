@@ -1,0 +1,92 @@
+# Build Debian Python packages using the Deadsnakes PPA
+#
+# To create a package for Stretch in `dist/`, call:
+#
+#   ./build.sh debian:stretch
+
+# Build arguments, as provided by 'build.sh'
+ARG DIST_ID="debian"
+ARG CODENAME="stretch"
+ARG SNAKE
+ARG ZIPLINK
+
+## Start package builder image for the chosen platform
+FROM ${DIST_ID}:${CODENAME} AS dpkg-build
+
+# Pass build args into image scope
+ARG CODENAME
+ARG SNAKE
+ARG ZIPLINK
+
+# Install build tools and package's build deps
+RUN env LANG=C apt-get update -qq -o Acquire::Languages=none \
+    && env LANG=C DEBIAN_FRONTEND=noninteractive apt-get upgrade \
+        -yqq -o Dpkg::Options::=--force-unsafe-io \
+    && env LANG=C DEBIAN_FRONTEND=noninteractive apt-get install \
+        -yqq --no-install-recommends -o Dpkg::Options::=--force-unsafe-io \
+        "" \
+        apt-transport-https \
+        apt-utils \
+        build-essential \
+        curl \
+        debhelper \
+        devscripts \
+        equivs \
+        tar \
+        unzip \
+        vim \
+        "" \
+        autoconf \
+        blt-dev \
+        debhelper \
+        libbluetooth-dev \
+        libbz2-dev \
+        libdb-dev \
+        libexpat1-dev \
+        libffi-dev \
+        libgdbm-dev \
+        libgpm2 \
+        liblzma-dev \
+        libmpdec-dev \
+        libncursesw5-dev \
+        libreadline-dev \
+        libsqlite3-dev \
+        libssl-dev \
+        locales \
+        lsb-release \
+        mime-support \
+        netbase \
+        net-tools \
+        python3 \
+        python3-sphinx \
+        quilt \
+        sharutils \
+        texinfo \
+        time \
+        tk-dev \
+        xauth \
+        xvfb \
+        zlib1g-dev \
+    && apt-get clean && rm -rf "/var/lib/apt/lists"/*
+
+# Fetch and prepare deadsnakes code
+WORKDIR /root
+RUN curl -Lk "${ZIPLINK}" -o python.zip \
+    && unzip -q python.zip \
+    && cd python*-ubuntu-*/ \
+    && sed -i \
+           -e "1s/xenial/$CODENAME/g" \
+           -e "1s/bionic/$CODENAME/g" \
+           -e "1s/focal/$CODENAME/g" \
+           -e "1s/+$CODENAME/~$CODENAME/g" \
+           debian/changelog \
+    && sed -i \
+           -e 's/^Maintainer:/Uploaders: Juergen Hermann <jh@web.de>\nMaintainer:/' \
+           debian/control
+
+# Build package
+RUN cd python*-ubuntu-*/ \
+    && dpkg-buildpackage -uc -us -b
+
+# Collect generated files
+RUN tar -cf /python.tar py*deb libpy*deb idle*deb *changes

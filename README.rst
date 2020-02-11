@@ -143,6 +143,18 @@ this is needed after a ‘normal’ venv setup::
 Note that Python 3.6 is needed at minimum.
 
 
+Deadsnakes PPA Builds for Debian in Docker
+------------------------------------------
+
+See the ``deadsnakes`` subfolder for a Dockerfile that builds
+packages for some Debian releases based on the
+`Deadsnakes PPA <https://github.com/deadsnakes>`_ code.
+
+For example, Debian Stretch comes with Python 3.5.3 on board,
+and this allows you to build Python 3.6 packages that can be
+installed concurrently to the default 3.5 ones.
+
+
 References
 ----------
 
