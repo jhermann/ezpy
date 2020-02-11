@@ -30,5 +30,5 @@ declare -a build_opts=(
 rm -f dist/*${snake}*${codename}*.*
 docker build "${build_opts[@]}" "$@" .
 mkdir -p dist
-docker run --rm $tag cat /python.tar | tar -C dist -x
+docker run $tag cat /python.tar | tar -C dist -x
 ls -lh dist/*${snake}*${codename}*.*
