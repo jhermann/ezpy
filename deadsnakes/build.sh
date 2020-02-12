@@ -17,8 +17,10 @@ zip_links["python3.6"]="https://github.com/deadsnakes/python3.6/archive/ubuntu/x
 zip_links["python3.7"]="https://github.com/deadsnakes/python3.7/archive/ubuntu/xenial.zip"
 zip_links["python3.8"]="https://github.com/deadsnakes/python3.8/archive/ubuntu/bionic.zip"
 
+sed -e "s/##ID##/${tag}/g" <Dockerfile.build >Dockerfile.$tag
+
 declare -a build_opts=(
-    -f Dockerfile.build
+    -f "Dockerfile.$tag"
     --tag "$tag"
     --build-arg "DIST_ID=$dist_id"
     --build-arg "CODENAME=$codename"

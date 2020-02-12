@@ -11,7 +11,7 @@ ARG SNAKE
 ARG ZIPLINK
 
 ## Start package builder image for the chosen platform
-FROM ${DIST_ID}:${CODENAME} AS dpkg-build
+FROM ${DIST_ID}:${CODENAME} AS dpkg-##ID##
 
 # Pass build args into image scope
 ARG CODENAME
@@ -58,7 +58,7 @@ RUN env LANG=C apt-get update -qq -o Acquire::Languages=none \
         netbase \
         net-tools \
         python3 \
-        python3-sphinx \
+        python3-pip \
         quilt \
         sharutils \
         texinfo \
@@ -67,6 +67,7 @@ RUN env LANG=C apt-get update -qq -o Acquire::Languages=none \
         xauth \
         xvfb \
         zlib1g-dev \
+    && python3 -m pip install -U Sphinx \
     && apt-get clean && rm -rf "/var/lib/apt/lists"/*
 
 # Fetch and prepare deadsnakes code
@@ -89,4 +90,4 @@ RUN cd python*-ubuntu-*/ \
     && dpkg-buildpackage -uc -us -b
 
 # Collect generated files
-RUN tar -cf /python.tar py*deb libpy*deb idle*deb *changes
+RUN tar -cf /python.tar py*deb libpy*deb idle*deb *buildinfo *changes

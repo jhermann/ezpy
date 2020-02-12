@@ -122,3 +122,6 @@ pyvenv.cfg
 
 # Jekyll
 _site/
+
+# Project
+deadsnakes/Dockerfile.py*
