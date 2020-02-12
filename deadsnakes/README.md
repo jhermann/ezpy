@@ -4,6 +4,9 @@ This directory contains a Dockerfile that builds
 packages for some Debian releases based on the
 [Deadsnakes PPA](https://github.com/deadsnakes) code.
 
+If you want pre-built packages that could be APT-installed directly from Bintray,
+[show your interest](https://github.com/jhermann/ezpy/issues/3) by voting on issue #3.
+
 These combinations were tested and end up in successful builds:
 
 * ``./build.sh debian:stretch python3.6``
