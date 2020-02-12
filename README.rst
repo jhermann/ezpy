@@ -74,7 +74,7 @@ virtualenv binaries (including Python itself).
 that gave you the link with the checksum.
 No difference to PyPI installs secured by a checksum – those run downloaded code, too.
 
-Story ♯4: ``ezpy docker run …``
+**Story ♯4:** ``ezpy docker run …``
 
 
 Developers
