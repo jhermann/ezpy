@@ -47,10 +47,11 @@ Usage
 End-Users
 ^^^^^^^^^
 
-Story ♯1: Users can download a simple script and start it (or, well, ``curl|python`` it),
+**Story ♯1:** Users can download a simple script and start it (or, well, ``curl|python`` it),
 and it'll bootstrap a full environment of dependencies.
 
-Story ♯2: Users need to ``pip3 install --user ezpy``.
+**Story ♯2** (‘dephell jail’ already implements this, see notes below):
+Users need to ``pip3 install --user ezpy``.
 Calling ``python3 -m ezpy check`` after that will go around any OS shenanigans
 – that could be used to handle the ``~/.local/bin`` problem (``python3 -m ezpy fix-path``).
 
@@ -68,7 +69,7 @@ Mostly like ``pipsi`` operates.
 Console entry points are linked / copied into the existing path, leaving out any unrelated
 virtualenv binaries (including Python itself).
 
-Story ♯3: ``ezpy run ‹url›#‹algo›=‹checksum›`` to directly run scripts from the web
+**Story ♯3:** ``ezpy run ‹url›#‹algo›=‹checksum›`` to directly run scripts from the web
 – security is based on the trust you have into the 3rd party
 that gave you the link with the checksum.
 No difference to PyPI installs secured by a checksum – those run downloaded code, too.
