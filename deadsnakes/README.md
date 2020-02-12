@@ -9,6 +9,8 @@ These combinations were tested and end up in successful builds:
 * ``./build.sh debian:stretch python3.6``
 * ``./build.sh debian:buster  python3.6``
 * ``./build.sh debian:stretch python3.7``
+* Buster comes with 3.7.3 on board
+* ``./build.sh debian:stretch python3.8``
 * ``./build.sh debian:buster  python3.8``
 
 As a negative example, Python 3.6 on Jessie does not work
