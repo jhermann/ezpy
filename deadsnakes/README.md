@@ -20,10 +20,13 @@ they can still be built on Debian and not just on Ubuntu.
 
 ## What is this then?
 
-This directory contains a Dockerfile that builds
-packages for some Debian releases based on the
-[Deadsnakes PPA](https://github.com/deadsnakes) code,
-by running the build process in the related base image.
+This directory contains a
+[Dockerfile](https://github.com/jhermann/ezpy/blob/master/deadsnakes/Dockerfile.build)
+that builds packages for some Debian releases based on the
+[Deadsnakes PPA](https://github.com/deadsnakes)
+code, by running the
+[build process](https://github.com/jhermann/ezpy/blob/master/deadsnakes/build.sh)
+in the related base image.
 
 If you want pre-built packages that could be APT-installed directly from Bintray,
 [show your interest](https://github.com/jhermann/ezpy/issues/3) by voting on issue #3.
