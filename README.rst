@@ -26,19 +26,36 @@ Think ``pipsi`` with a wider scope, and working on Python 3.
 Design Goals
 ^^^^^^^^^^^^
 
-* Reduce installation instructions to ideally one or two command calls
-* Make distribution of ‘simple’ scripts a breeze
+* Reduce installation instructions to ideally one or two command calls.
+* Make distribution of ‘simple’ scripts a breeze.
 
-  * … but support dependencies from PyPI nontheless
+  * … but support dependencies from PyPI nontheless.
 
-* Require only a Python interpreter to be already installed on an end-user machine
+* Require only a Python interpreter to be already installed on an end-user machine.
 
-  * … but use what's installed already (if new enough)
-  * Work on outdated installations (say down to Wheezy / Precise / pip 1.5.6)
+  * … but use what's installed already (if new enough).
+  * Work on outdated installations (say down to Jessie / Trusty for now).
 
-* Work on Linux, MacOS, Windows (in that order of importance)
-* Rely heavily on existing tooling, especially ``pyvenv`` and ``pip``
+* Work on Linux, MacOS, Windows (in that order of importance).
+* Rely heavily on existing tooling, especially ``venv`` and ``pip``.
 * Vendor any dependencies, or don't have any beyond the standard library.
+
+
+What's here?
+^^^^^^^^^^^^
+
+While this repository contains code for a command line tool, it does not do anything *yet*.
+At the moment pointing to other projects that fit above design goals proves more useful.
+
+So here is what you get:
+
+* My thoughst on good release and installation work-flows in “Usage”.
+* Quick hints on how to use `dephell`\ 's ``jail`` sub-command for easy software installation.
+* Deadsnakes PPA builds for Debian in a Docker container, leading to 3.6 … 3.8 being uniformly available on Debian (old-)stable and Ubuntu (old-)LTS, i.e. the four major releases of the Debian-verse.
+* A list of related projects, with comments on ones I tried myself, and those I regularly use.
+
+If you're missing something within the range of teh stated design goals, open an issue with your user-story,
+and we'll see if I like it. ☺
 
 
 Usage
@@ -169,8 +186,9 @@ Related Projects
 
 Let's start with an overview of tools I used at some point (or which I'm still using) and which proved useful and usable:
 
-* ``PEX`` creates single file ZIP apps (PEP 441). ``shiv`` is very similar.
+* ``PEX`` creates single file ZIP apps (PEP 441). ``shiv`` is very similar. ``PEX`` has some multi-platform support, while ``shiv`` is simpler. If one them does not satisfy your needs, try the other.
 * ``platter`` collects wheels into a tarball for off-line and repeatable deployments. It's sort-of unmaintained. ``wagon`` is similar, but I did not test it yet.
+* For ``dephell``, see the section above.
 
 What follows is a longer list, in part abandoned / unmaintained, and with different traits regarding platform compatibility and versatility.
 Last recorded commit activity is included as ``(YYYY)`` – at the time entries were initially added or updated.
