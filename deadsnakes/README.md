@@ -52,6 +52,10 @@ Note that Bionic comes with 3.6 as a default.
 The same goes for *Python 3.7*, with Buster having it as a default.
 
 *Python 3.8* is an add-on for all the (old-)stable releases.
+Using this version makes the most sense to me, unless you have special needs forcing you to go to 3.7 or 3.6.
+Being an add-on everywhere ensures a similar experience regarding any quirks you encounter,
+and it is (right now) the newest stable version of Python.
+It also fits best what you get when using Docker's ``python:3-slim``.
 
 As a negative example, Python 3.6 on Jessie does not work
 because of a ``Breaks: libmpdec2 (<< 2.4.2)`` control file entry
