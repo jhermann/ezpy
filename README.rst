@@ -41,7 +41,7 @@ Design Goals
 * Vendor any dependencies, or don't have any beyond the standard library.
 
 
-What's here?
+What's Here?
 ^^^^^^^^^^^^
 
 While this repository contains code for a command line tool, it does not do anything *yet*.
@@ -49,12 +49,12 @@ At the moment pointing to other projects that fit above design goals proves more
 
 So here is what you get:
 
-* My thoughst on good release and installation work-flows in “Usage”.
+* My thoughts on good release and installation work-flows in “Usage”.
 * Quick hints on how to use `dephell`\ 's ``jail`` sub-command for easy software installation.
 * Deadsnakes PPA builds for Debian in a Docker container, leading to 3.6 … 3.8 being uniformly available on Debian (old-)stable and Ubuntu (old-)LTS, i.e. the four major releases of the Debian-verse.
 * A list of related projects, with comments on ones I tried myself, and those I regularly use.
 
-If you're missing something within the range of teh stated design goals, open an issue with your user-story,
+If you're missing something within the range of the stated design goals, open an issue with your user-story,
 and we'll see if I like it. ☺
 
 
@@ -65,9 +65,9 @@ End-Users
 ^^^^^^^^^
 
 **Story ♯1:** Users can download a simple script and start it (or, well, ``curl|python`` it),
-and it'll bootstrap a full environment of dependencies.
+and it'll bootstrap a full environment of dependencies (``dephell jail`` fits that bill).
 
-**Story ♯2** (‘dephell jail’ already implements this, see notes below):
+**Story ♯2**:
 Users need to ``pip3 install --user ezpy``.
 Calling ``python3 -m ezpy check`` after that will go around any OS shenanigans
 – that could be used to handle the ``~/.local/bin`` problem (``python3 -m ezpy fix-path``).
@@ -90,8 +90,9 @@ virtualenv binaries (including Python itself).
 – security is based on the trust you have into the 3rd party
 that gave you the link with the checksum.
 No difference to PyPI installs secured by a checksum – those run downloaded code, too.
+``dephell jail try …`` does this already, but I'm unsure about any special security measueres.
 
-**Story ♯4:** ``ezpy docker run …``
+**Story ♯4:** ``ezpy docker run …`` – again, ``dephell`` has some Docker support, but I did not try that yet.
 
 
 Developers
