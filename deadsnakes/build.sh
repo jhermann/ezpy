@@ -6,8 +6,8 @@
 set -e
 
 # Get build platform as 1st argument, and collect project metadata
-image="${1:?usage: $(basename $0) ‹distro:release› [python‹N.N›]}"; shift
-snake="${1:-python3.6}"; test -z "$1" || shift
+image="${1:?usage: $(basename $0) ‹distro:release› [python‹N.N› [‹docker-build-args›…]]}"; shift
+snake="${1:-python3.8}"; test -z "$1" || shift
 dist_id="${image%%:*}"
 codename="${image#*:}"
 tag="${snake//./}-$dist_id-$codename"
