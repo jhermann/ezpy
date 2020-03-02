@@ -28,6 +28,11 @@ code, by running the
 [build process](https://github.com/jhermann/ezpy/blob/master/deadsnakes/build.sh)
 in the related base image.
 
+To *force* a full re-build with no caching, e.g. when the PPA released a new minor version,
+append Docker's ``--no-cache`` option to the build command. Example:
+
+    ./build.sh debian:buster python3.8 --no-cache
+
 If you want pre-built packages that could be APT-installed directly from Bintray,
 [show your interest](https://github.com/jhermann/ezpy/issues/3) by voting on issue #3.
 
