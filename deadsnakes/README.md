@@ -17,6 +17,8 @@ and also other minor versions.
 Originally based on the Debian source packages,
 they can still be built on Debian and not just on Ubuntu.
 
+Also take notice of the [Unofficial Python backports for Debian](https://people.debian.org/~paravoid/python-all/) project, but keep in mind you do not get uniform builds for all Debian-like releases like with this project, so there might be subtle differences.
+
 
 ## What is this then?
 
