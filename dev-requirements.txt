@@ -2,7 +2,7 @@
 # Development requirements
 #
 
-pip==20.0.2
+pip==21.1
 invoke==1.4.1
 #rituals==0.3.0
 https://github.com/jhermann/rituals/archive/master.zip#egg=rituals
