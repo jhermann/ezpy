@@ -68,7 +68,7 @@ RUN env LANG=C apt-get update -qq -o Acquire::Languages=none \
         xauth \
         xvfb \
         zlib1g-dev \
-    && python3 -m pip install -U Sphinx \
+    && : python3 -m pip install -U Sphinx \
     && apt-get clean && rm -rf "/var/lib/apt/lists"/*
     # update of Sphinx is for Stretch and Python 3.8
 
@@ -76,11 +76,12 @@ RUN env LANG=C apt-get update -qq -o Acquire::Languages=none \
 WORKDIR /root
 RUN curl -Lk "${ZIPLINK}" -o python.zip \
     && unzip -q python.zip \
-    && cd python*-ubuntu-*/ \
+    && { cd python*-ubuntu-*/ || cd python*-debian-*/ ; } \
     && sed -i \
            -e "1s/xenial/$CODENAME/g" \
            -e "1s/bionic/$CODENAME/g" \
            -e "1s/focal/$CODENAME/g" \
+           -e "1s/jammy/$CODENAME/g" \
            -e "1s/+$CODENAME/~$CODENAME/g" \
            debian/changelog \
     && sed -i \
@@ -88,7 +89,7 @@ RUN curl -Lk "${ZIPLINK}" -o python.zip \
            debian/control
 
 # Build package
-RUN cd python*-ubuntu-*/ \
+RUN { cd python*-ubuntu-*/ || cd python*-debian-*/ ; } \
     && dpkg-buildpackage -uc -us -b
 
 # Collect generated files
